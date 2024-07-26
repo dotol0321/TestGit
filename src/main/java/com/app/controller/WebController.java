@@ -11,7 +11,7 @@ public class WebController {
 	private TestMapper tm;
 	
     @GetMapping("/")
-    public String home() {
+    public String home() {    	 
         return "환영합니다. (" + tm.testDB() + ")";
     }
 
